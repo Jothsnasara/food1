@@ -1,0 +1,424 @@
+/*
+    Author : Liya Rose Tomy;
+    Theme  : Food Delivery;
+    Version: 1.0;
+*/
+
+/* ======================
+   Global Styles
+====================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.img-curve {
+  border-radius: 15px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+a {
+  color: #ff6b81;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4757;
+}
+
+.btn {
+  padding: 1%;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ff6b81;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #ff4757;
+  color: white;
+}
+
+h2 {
+  color: #2f3542;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.float-container {
+  position: relative;
+}
+
+.float-text {
+  position: absolute;
+  bottom: 50px;
+  left: 40%;
+}
+
+/* ======================
+   Navbar
+====================== */
+
+.logo {
+  width: 10%;
+  float: left;
+}
+
+.menu {
+  line-height: 60px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul li {
+  display: inline;
+  padding: 1%;
+  font-weight: bold;
+}
+
+.menu ul li a.active {
+  color: orange;
+}
+
+/* ======================
+   Food Search Section
+====================== */
+
+.food-search {
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 7% 0;
+}
+
+.food-search input[type="search"] {
+  width: 50%;
+  padding: 1%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ======================
+   Categories Section
+====================== */
+
+.categories {
+  padding: 4% 0;
+}
+
+.box-3 {
+  width: 28%;
+  float: left;
+  margin: 2%;
+}
+
+/* ======================
+   Food Menu Section
+====================== */
+
+.food-menu {
+  background-color: #ececec;
+  padding: 4% 0;
+}
+
+.food-menu-box {
+  width: 43%;
+  margin: 1%;
+  padding: 2%;
+  float: left;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.food-menu-img {
+  width: 20%;
+  float: left;
+}
+
+.food-menu-desc {
+  width: 70%;
+  float: left;
+  margin-left: 8%;
+}
+
+.food-price {
+  font-size: 1.2rem;
+  margin: 2% 0;
+}
+
+.food-detail {
+  font-size: 1rem;
+  color: #747d8c;
+}
+
+/* ======================
+   Social Section
+====================== */
+
+.social ul {
+  list-style-type: none;
+}
+
+.social ul li {
+  display: inline;
+  padding: 1%;
+}
+
+/* ======================
+   About Us Page Styles
+====================== */
+
+.about-hero {
+  background: url("charitify.webp") no-repeat center center/cover;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 120px 20px;
+}
+
+.about-hero .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 80px 20px;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+}
+
+/* Buttons in Hero */
+.about-hero .btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.about-hero .btn:first-child {
+  background: orange;
+  color: #fff;
+}
+
+.about-hero .btn:first-child:hover {
+  background: #e67e22;
+}
+
+.about-hero .btn:last-child {
+  background: #fff;
+  color: orange;
+  border: 2px solid orange;
+}
+
+.about-hero .btn:last-child:hover {
+  background: orange;
+  color: #fff;
+}
+
+/* Info Cards */
+.about-cards {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-cards .card {
+  flex: 1 1 280px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-cards .card:hover {
+  transform: translateY(-8px);
+}
+
+.about-cards h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Team Section */
+.team {
+  padding: 60px 20px;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2f3542;
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-member {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 250px;
+}
+
+.team-member:hover {
+  transform: translateY(-6px);
+}
+
+.team-member h4 {
+  margin: 15px 0 5px;
+  color: 898685px;;
+}
+
+.team-member p {
+  color:white;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.footer a {
+  color: orange;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ff6b81;
+}
+
+/* ======================
+   Responsive Design
+====================== */
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 80%;
+    float: none;
+    margin: 1% auto;
+  }
+
+  .menu ul {
+    text-align: center;
+  }
+
+  .food-search input[type="search"] {
+    width: 90%;
+    padding: 2%;
+    margin-bottom: 3%;
+  }
+
+  .btn {
+    width: 91%;
+    padding: 2%;
+  }
+
+  .box-3 {
+    width: 90%;
+    margin: 4% auto;
+  }
+
+  .food-search {
+    padding: 10% 0;
+  }
+
+  h2 {
+    margin-bottom: 10%;
+  }
+
+  .categories {
+    padding: 20% 0;
+  }
+
+  .food-menu {
+    padding: 20% 0;
+  }
+
+  .food-menu-box {
+    width: 90%;
+    padding: 5%;
+    margin-bottom: 5%;
+  }
+
+  .social {
+    padding: 5% 0;
+  }
+
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
